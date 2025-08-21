@@ -1,0 +1,225 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 233, 243);
+    height: calc(90vh - 3%);
+    margin: 3% 20%;
+    
+}
+
+
+.main{
+    background-color:white;
+    height: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.navbar{
+   background-color: #002782;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0 25px;
+}
+
+.titre{
+    display: flex;
+    align-content: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.parts li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.parts a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.parts a:hover {
+    color:rgb(225, 0, 255);
+    letter-spacing: 3px;
+}
+
+/*là c bon pr vue principale*/
+
+
+form{
+    margin: 10% 20%;
+   /* position: absolute;/********/
+  position: relative;
+  height: 400px;
+  
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.cv input[type="file"]{
+    opacity: 0;
+    height: 100%;
+    position: absolute;/******************/
+    
+}
+
+.lettre input[type="file"]{
+    opacity: 0;
+    height: 100%;
+    position: absolute;/******************/
+    
+    
+}
+
+.cv, .lettre{
+   /* background-color: red;*/
+    position: relative; /**c important sinon elly mellouta l kol ywally 3ibara input ma3neha hatta les espaces w lbtn ajouter w ziid men ghady tji mochkla mtae deformation height w width khater apparement 100% mtae l input sans preciser lelemnt parent*/
+    height: 40px;
+    margin-bottom: 20px;
+    
+    border-radius: 15px;
+    padding-top: 5px;
+    
+    border: solid black 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.add_btn{
+    width: fit-content;
+    bottom: 0;
+    position: absolute;
+    font-size: larger;
+    background-color: #002782;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.add_btn:hover{
+    
+    letter-spacing: 5px;
+    width: 150px;
+    
+}
+
+.icon{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.info{
+    padding:  0 15px;
+}
+
+input:focus{
+    transform: scale(1.1);/*1out of 10 (1.5) 1 out of 5*/
+    background-color: #002782;
+    color: white;
+}
+/*
+.affichage{
+    display: none;
+}*/
+
+#consulter, #tt_voir{
+    margin: 5% 10%;
+    
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+h4{
+    color: red;
+    
+    text-decoration: underline;
+}
+
+table th {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #002782;
+}
+
+
+
+table button{
+    border: 0;
+    border-radius: 10px;
+    background-color: #002782;
+    padding: 6px ;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+table button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+table button:hover{
+    background-color: red;
+    letter-spacing: 3px;
+}
+
+
+h5 a{
+    text-decoration: none;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+   
+}
+
+h5{
+    margin-top: 40px;
+    background-color: rgb(236, 20, 20);;
+    
+    /*width: fit-content;*/
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.btn_see_skills{
+    font-size: larger;
+    background-color: #002782;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}
+
+
+.choices{
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#niveau{
+    border: solid 2px black;
+    border-radius: 15px;
+}
