@@ -1,0 +1,186 @@
+.menu {
+    background-color: #1b1b25;
+    width: 65px; /*5% ne fctionne pas en mode phone n'apparait prsq pas*/
+    
+    height: 95vh;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    /**/
+    flex-shrink: 0;
+    /**/
+    position: fixed;
+
+   
+}
+
+.menu:hover{
+    width: 260px; /*de meme ici 15% ne fctionne pas ça ne s'ouvre pas en mode phone*/
+}
+
+.element{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 40px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 25px;
+    border-radius: 10px;
+    margin: 10px;
+   
+}
+
+.profil img{
+    
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+    /*width: calc(100% - 40px);  Soustrayez 20px de marge de chaque côté 
+    padding: 0 20px;  Ajoutez 20px de padding de chaque côté pour compenser les marges 
+    */
+    background-color: red;
+}
+
+.element i{
+    color: white;
+    font-size: x-large;
+}
+
+.element a, .profil p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.element:hover, .profil:hover, td:hover, .content_element:hover{
+    background-color: #323250;
+}
+
+body{
+    background-color: #090808;
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard, .products{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    background-color: rgb(20, 20, 130);
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+}
+
+.content{
+    /*background-color: aqua;*/
+    width: 100%;
+    height: max-content;
+    margin-left: 80px;/*ceci est pr qu'on faisant la position fixed menu reste separee de la partie contenu et c à noter qu'il faut la faire avec px car % ne fctionne pas ne correspond pas à la responsivité dnc d'ailleurs je conclus que le % n'est vraimment eff pr responsivité le fait de definir en px c plus statique ou fixe */
+}
+
+.content_element{
+    background-color: #1b1b25;
+    /*width: fit-content;*/
+    
+    flex-grow: 1;
+    height: 160px;
+    /**/
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    /**/
+    padding: 10px;
+    /**/
+}
+
+.texte{
+    line-height: 1px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.part1{  
+    display: flex;
+/*comme ça pas despace aux cotes de la largeur comme voulu et espace dedans*/
+    justify-content: space-between;
+    margin: 10px;
+    /**/
+   /* background-color: brown;*/
+    
+    margin-top: 10px;
+    /**/
+    flex-wrap: wrap;
+    /**/
+    
+}
+.content_element i{
+    font-size: 50px;
+}
+
+table{
+    width: calc(100% - 20px);
+    margin: 10px;
+    margin-top: 10px;
+    /*background-color: antiquewhite;*/
+    border-spacing: 10px;
+}
+
+.telement{
+    border-radius: 10px;
+    background-color: #1b1b25;
+
+    height: 50px;
+    border-spacing:8px;
+    text-align: center;
+}
+
+.th{
+    
+    background-color: rgb(20, 20, 130);
+}
+
+.c{
+    background-color: rgb(221, 221, 29);
+}
+
+.p{
+    background-color: green;
+}
+
+.p, .c{
+    border-radius: 10px;
+    padding: 6px;
+    width: 100px;
+    height: 25px;
+}
+
+/*display:none; to hide elements*/
